@@ -11,9 +11,19 @@
 
 */
 
-const longestString = () => {
-    /* Тут код*/
+const longestString = (arr) => {
+	let string;
+	if (arr.length === 0) {
+		string = null;
+	} else {
+		string = arr[0];
+		arr.map((item) => {
+			if (item.length > string.length) {
+				string = item;
+			}
+		});
+	}
+	return string;
+};
 
-}
-
-module.exports = longestString
+module.exports = longestString;

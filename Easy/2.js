@@ -5,8 +5,7 @@
 */
 
 const objValue = (obj, key) => {
-    /* Тут код*/
+	return obj[key];
+};
 
-}
-
-module.exports = objValue
+module.exports = objValue;

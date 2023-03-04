@@ -9,8 +9,13 @@
 */
 
 const nestedArr = (arr, number) => {
-    /* Тут код*/
+	let indexOfArr;
+	arr.map((item, index) => {
+		if (item.includes(number)) {
+			indexOfArr = index;
+		}
+	});
+	return indexOfArr;
+};
 
-}
-
-module.exports = nestedArr
+module.exports = nestedArr;

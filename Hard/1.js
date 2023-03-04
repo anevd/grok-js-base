@@ -11,9 +11,10 @@
 
 */
 
-const validTriangle = () => {
-    /* Тут код*/
-
-}
-
-module.exports = validTriangle
+const validTriangle = (a, b, c) => {
+	let arr = [a, b, c].sort();
+	if (a + b > c) {
+		return true;
+	} else return false;
+};
+module.exports = validTriangle;

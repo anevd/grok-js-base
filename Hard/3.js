@@ -7,9 +7,15 @@
 Пример: 'web_development' => 'webDevelopment'
 */
 
-const camelCase = () => {
-    /* Тут код*/
+const camelCase = (str) => {
+	let arr = str.split("");
+	arr.map((item, index, arr) => {
+		if (item === "_") {
+			arr[index + 1] = arr[index + 1].toUpperCase();
+			arr.splice(index, 1);
+		}
+	});
+	return arr.join("");
+};
 
-}
-
-module.exports = camelCase
+module.exports = camelCase;
