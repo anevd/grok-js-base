@@ -10,7 +10,7 @@
 
 const nestedArr = (arr, number) => {
 	let indexOfArr;
-	arr.map((item, index) => {
+	arr.forEach((item, index) => {
 		if (item.includes(number)) {
 			indexOfArr = index;
 		}
